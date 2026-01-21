@@ -30,7 +30,7 @@ Sistema simples e divertido para confirmação de presença (RSVP) em festas de 
 
 1. **Clone o repositório:**
 ```bash
-git clone https://github.com/seu-usuario/rsvp-aniversario.git
+git clone https://github.com/marcola20/rsvp-aniversario.git
 cd rsvp-aniversario
 ```
 
