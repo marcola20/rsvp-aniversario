@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniversário Infantil - Confirmação de Presença</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%23FF8C42'/><circle cx='35' cy='40' r='8' fill='%23FFFFFF'/><circle cx='65' cy='40' r='8' fill='%23FFFFFF'/><circle cx='35' cy='40' r='4' fill='%23000000'/><circle cx='65' cy='40' r='4' fill='%23000000'/><path d='M 30 60 Q 50 70 70 60' stroke='%23FFFFFF' stroke-width='4' fill='none' stroke-linecap='round'/><path d='M 50 10 L 55 5 L 60 10 L 55 15 Z' fill='%23FF6B9D'/><path d='M 45 15 L 50 10 L 55 15 L 50 20 Z' fill='%23FF6B9D'/><path d='M 60 15 L 65 10 L 70 15 L 65 20 Z' fill='%23FF6B9D'/></svg>" type="image/svg+xml">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Lilita+One&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="clouds">
+        <div class="cloud cloud-1"></div>
+        <div class="cloud cloud-2"></div>
+        <div class="cloud cloud-3"></div>
+    </div>
+
+    <div class="balloons">
+        <div class="balloon balloon-1"></div>
+        <div class="balloon balloon-2"></div>
+        <div class="balloon balloon-3"></div>
+        <div class="balloon balloon-4"></div>
+        <div class="balloon balloon-5"></div>
+    </div>
+
+    <div class="container">
+        <div class="banner"></div>
+
+        <div class="card">
+            <div class="leaf-decoration leaf-left"></div>
+            <div class="leaf-decoration leaf-right"></div>
+
+            <h1>
+                <span class="dino-emoji">🦖</span> NOME <span class="dino-emoji">🦕</span>
+            </h1>
+            <div class="subtitle">Faz 1 Aninho!</div>
+
+            <div class="event-info">
+                <div class="info-item">
+                    <div class="info-icon">📅</div>
+                    <div class="info-text">
+                        <span class="info-label">Data</span>
+                        <span class="info-value">15 de Abril, Sábado</span>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">⏰</div>
+                    <div class="info-text">
+                        <span class="info-label">Horário</span>
+                        <span class="info-value">15:00h</span>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <div class="info-icon">📍</div>
+                    <div class="info-text">
+                        <span class="info-label">Local</span>
+                        <span class="info-value">Rua da Amizade, Nº123<br>Bairro Feliz - Salão de Festas Alegria</span>
+                    </div>
+                </div>
+            </div>
+
+            <form id="rsvpForm" class="form-section">
+                <div class="form-title">Confirme sua presença! 🎉</div>
+
+                <div class="form-group">
+                    <label>Quem virá? *</label>
+                    <div id="guestsList">
+                        <div class="guest-item" data-guest-index="0">
+                            <div class="guest-input-group">
+                                <input type="text" name="guest_name_0" class="guest-input" required placeholder="Nome do 1º convidado" />
+                                <select name="guest_age_0" class="age-select" required>
+                                    <option value="">Idade</option>
+                                    <option value="adulto">Adulto</option>
+                                    <option value="crianca">Criança</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="add-guest-btn" id="addGuestBtn">
+                        ➕ Adicionar mais um convidado
+                    </button>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Deixe uma mensagem (opcional)</label>
+                    <textarea id="message" name="message" placeholder="Escreva uma mensagem especial..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">🦖 Confirmar Presença! 🎂</button>
+
+                <div class="success-message" id="successMessage">
+                    🎉 Presença confirmada com sucesso! Nos vemos na festa! 🦕
+                </div>
+            </form>
+        </div>
+
+        <div class="footer">
+            <div class="footer-dinos">🦕 🦖 🦕</div>
+            <p>Confirmar presença até 01/04</p>
+            <p style="margin-top: 5px;">Esperamos por você! 💚</p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
